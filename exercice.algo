@@ -1,0 +1,43 @@
+ALGORITHM Checkpoint
+VAR
+  ph: STRING[];
+  nC,nM,nV:INTEGER;
+BEGIN
+
+END
+
+write("Donner la phrase");
+read(ph);
+
+
+//initialisation des 3 compteurs
+  nC:= 0 ;  
+  nM:= 1 ;
+  nV:= 0;
+ 
+REPEAT
+
+   
+   IF (ph[nC]=" ") THEN
+
+       nM:=nM+1 ;
+   END_IF
+
+  IF (ph[nC] in ["a","e","u","i","o","y"]) THEN
+
+   nV:= nV +1 ;
+
+   END_IF
+
+   nV := nV+1 ;
+
+UNTIL (ph[nC]=".")
+
+write( "le nombre de caractere est",nC+1 )
+
+write (" le nombre de mot est ",nM)
+
+write (" le nombre de voyelle est ",nV)
+
+END
+
