@@ -4,8 +4,6 @@ VAR
   nC,nM,nV:INTEGER;
 BEGIN
 
-END
-
 write("Donner la phrase");
 read(ph);
 
